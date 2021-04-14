@@ -5,7 +5,7 @@
 # Анимации
 
 ## Сборка
-https://github.com/nirastor/ahj-5-1-popover.git/
+https://nirastor.github.io/ahj-5-1-popover/
 
 ## Описание
 Никакого сложного описания. Просто центрированный поповер на чистом JS без JQuery :-)
