@@ -1,0 +1,98 @@
+/* app styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #aaaaaa;
+  font-size: 18px;
+  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+
+.app-column {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 15px 2px #444444;
+  padding: 40px 40px 0;
+  position: relative;
+}
+
+.app-button {
+  margin-top: 200px;
+  width: 200px;
+  position: relative;
+}
+
+/* button styles */
+
+.button {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  background-color: rgb(34, 141, 212);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(26, 151, 235);
+}
+
+/* popover */
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250px;
+  transform: translate(-50%, -110%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.popover-title {
+  background-color: #cccccc;
+  padding: 10px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #aaaaaa;
+  border-bottom-style: none;
+}
+
+.popover-text {
+  padding: 10px;
+  font-size: 16px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #aaaaaa;
+  border-top-style: none;
+}
+
+.popover::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color:#ffffff;
+  border: 1px solid #aaaaaa;
+  border-left-style: none;
+  border-top-style: none;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
